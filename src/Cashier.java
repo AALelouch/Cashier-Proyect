@@ -22,7 +22,6 @@ public class Cashier {
                     System.out.println("The quantity of fifty bills are " + w1.get1());
                     System.out.println("The quantity of twenty bills are " + w1.get2());
                     System.out.println("The quantity of ten bills are " + w1.get3());
-                    System.out.println(w1.getCashRequest());
                 }
                 catch (IllegalArgumentException e){
                     System.out.println("Invalid value for the withdrawal");
