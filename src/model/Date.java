@@ -8,11 +8,16 @@ public class Date {
     int month;
     int year;
     List<String> palindromos = new ArrayList<>();
+    int quantity;
 
-    public Date(int day, int month, int year) {
+    public Date(int day, int month, int year, int quantity) {
+        if (quantity>100){
+            throw new IllegalArgumentException("Invalid quantity of palindromos");
+        }
         this.day = day;
         this.month = month;
         this.year = year;
+        this.quantity = quantity;
     }
 
     public List<String> findPalindromo() {
@@ -39,7 +44,7 @@ public class Date {
 
                 if (reverseDateTwo.equals(date)){
                     palindromos.add(date);
-                    if (palindromos.size() == 4){
+                    if (palindromos.size() == quantity){
                         flag = false;
                         return palindromos;
                     }
