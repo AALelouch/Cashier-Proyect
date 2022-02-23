@@ -18,7 +18,7 @@ public class Withdrawals {
 
     //Validator for the cash request value
     public boolean validatorCashRequest(int cashRequestValue) {
-        return (cashRequestValue % 10000) == 0 && cashRequestValue > 10000;
+        return (cashRequestValue % 10000) == 0 && cashRequestValue >= 10000;
     }
 
     //Method to deploy cash
