@@ -16,6 +16,8 @@ public class Number {
         this.aDouble = i;
     }
 
+
+
     public String toLetterUnits(double number){
         String letter = "";
         int number2 = (int) number;
